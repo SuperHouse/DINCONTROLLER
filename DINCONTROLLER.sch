@@ -2606,9 +2606,10 @@ IOREF is 3.3V out to main board</text>
 <text x="187.452" y="67.564" size="1.6764" layer="94">Dual Footprint</text>
 <text x="170.18" y="86.36" size="1.778" layer="94">800mA</text>
 <text x="12.7" y="142.24" size="1.778" layer="97">(IOREF)</text>
-<text x="7.62" y="5.08" size="1.778" layer="97">WARNING: GPIO32/33 are used by RTC. Need to modify WROOM32 to use them as GPIO</text>
+<text x="7.62" y="5.08" size="1.778" layer="97">WARNING: GPIO32/33 are used by RTC. Need to modify WROOM32 to use them as outputs</text>
 <text x="121.92" y="35.56" size="1.778" layer="97">OLED Header</text>
 <text x="142.24" y="91.44" size="1.778" layer="97">Programming Header</text>
+<text x="53.34" y="144.78" size="1.778" layer="97">(RESET)</text>
 </plain>
 <instances>
 <instance part="FID1" gate="G$1" x="226.06" y="22.86"/>
@@ -3136,13 +3137,6 @@ IOREF is 3.3V out to main board</text>
 <pinref part="IC1" gate="IC$1" pin="IO25"/>
 </segment>
 </net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="12"/>
-<wire x1="40.64" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
-<label x="45.72" y="144.78" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -3540,6 +3534,11 @@ IOREF is 3.3V out to main board</text>
 <wire x1="27.94" y1="96.52" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <junction x="27.94" y="83.82"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="12"/>
+<wire x1="40.64" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
+<label x="45.72" y="144.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GPIO0" class="0">
 <segment>
@@ -3561,6 +3560,34 @@ IOREF is 3.3V out to main board</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="206,1,203.2,60.96,3.3V,,,,,"/>
+<approved hash="206,1,203.2,58.42,3.3V,,,,,"/>
+<approved hash="206,1,193.04,78.74,3.3V,,,,,"/>
+<approved hash="206,1,193.04,76.2,3.3V,,,,,"/>
+<approved hash="208,1,203.2,60.96,3.3V,out,,,,"/>
+<approved hash="208,1,203.2,58.42,3.3V,out,,,,"/>
+<approved hash="208,1,193.04,78.74,3.3V,out,,,,"/>
+<approved hash="208,1,193.04,76.2,3.3V,out,,,,"/>
+<approved hash="208,1,226.06,78.74,3.3V,sup,,,,"/>
+<approved hash="208,1,43.18,91.44,3.3V,sup,,,,"/>
+<approved hash="208,1,7.62,165.1,3.3V,sup,,,,"/>
+<approved hash="208,1,134.62,88.9,3.3V,sup,,,,"/>
+<approved hash="208,1,33.02,99.06,3.3V,sup,,,,"/>
+<approved hash="208,1,124.46,66.04,3.3V,sup,,,,"/>
+<approved hash="208,1,114.3,33.02,3.3V,sup,,,,"/>
+<approved hash="208,1,81.28,172.72,3.3V,sup,,,,"/>
+<approved hash="208,1,167.64,172.72,3.3V,sup,,,,"/>
+<approved hash="208,1,210.82,172.72,3.3V,sup,,,,"/>
+<approved hash="208,1,124.46,172.72,3.3V,sup,,,,"/>
+<approved hash="208,1,81.28,134.62,3.3V,sup,,,,"/>
+<approved hash="208,1,124.46,134.62,3.3V,sup,,,,"/>
+<approved hash="208,1,167.64,134.62,3.3V,sup,,,,"/>
+<approved hash="208,1,210.82,134.62,3.3V,sup,,,,"/>
+<approved hash="208,1,40.64,43.18,3.3V,sup,,,,"/>
+<approved hash="106,1,48.26,81.28,N$20,,,,,"/>
+<approved hash="106,1,48.26,78.74,N$21,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
