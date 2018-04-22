@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -2606,7 +2606,8 @@ IOREF is 3.3V out to main board</text>
 <text x="187.452" y="67.564" size="1.6764" layer="94">Dual Footprint</text>
 <text x="170.18" y="86.36" size="1.778" layer="94">800mA</text>
 <text x="12.7" y="142.24" size="1.778" layer="97">(IOREF)</text>
-<text x="7.62" y="5.08" size="1.778" layer="97">WARNING: GPIO32/33 are used by RTC. Need to modify WROOM32 to use them as outputs</text>
+<text x="7.62" y="5.08" size="1.778" layer="97">WARNING: GPIO32/33 are used by RTC. Need to modify WROOM32 to use them as outputs
+Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <text x="121.92" y="35.56" size="1.778" layer="97">OLED Header</text>
 <text x="142.24" y="91.44" size="1.778" layer="97">Programming Header</text>
 <text x="53.34" y="144.78" size="1.778" layer="97">(RESET)</text>
