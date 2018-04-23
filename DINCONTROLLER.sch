@@ -2546,7 +2546,6 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="R2" library="freetronics" deviceset="RESISTOR" device="0603" value="22K"/>
 <part name="P+9" library="freetronics-original" deviceset="3.3V" device=""/>
-<part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="IC1" library="freetronics-jon" deviceset="ESPWROOM32" device=""/>
 <part name="R3" library="freetronics" deviceset="RESISTOR" device="0603" value="22K"/>
 <part name="R7" library="freetronics" deviceset="RESISTOR" device="0603" value="22K"/>
@@ -2566,8 +2565,6 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <part name="P+17" library="freetronics-original" deviceset="3.3V" device=""/>
 <part name="S3" library="freetronics-jon" deviceset="TAC_SWITCH_2PIN" device="SMT" value="RESET"/>
 <part name="S4" library="freetronics-jon" deviceset="TAC_SWITCH_2PIN" device="SMT" value="FLASH"/>
-<part name="JP5" library="freetronics-jon" deviceset="M04" device="PTH"/>
-<part name="P+18" library="freetronics-original" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2586,16 +2583,16 @@ Button 3: IO32
 Button 4: IO33
 Button 5: IO4
 Button 6: IO16
-Button 7: IO17
-Button 8: IO18
+Button 7: IO12
+Button 8: IO2
 
 Output1: IO14
 Output2: IO27
 Output3: IO26
 Output4: IO25
 Output5: IO19
-Output6: IO21
-Output7: IO22
+Output6: IO17
+Output7: IO18
 Output8: IO23</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">VCC is VIN from main board
 IOREF is 3.3V out to main board</text>
@@ -2606,9 +2603,8 @@ IOREF is 3.3V out to main board</text>
 <text x="187.452" y="67.564" size="1.6764" layer="94">Dual Footprint</text>
 <text x="170.18" y="86.36" size="1.778" layer="94">800mA</text>
 <text x="12.7" y="142.24" size="1.778" layer="97">(IOREF)</text>
-<text x="7.62" y="5.08" size="1.778" layer="97">WARNING: GPIO32/33 are used by RTC. Need to modify WROOM32 to use them as outputs
-Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
-<text x="121.92" y="35.56" size="1.778" layer="97">OLED Header</text>
+<text x="7.62" y="5.08" size="1.778" layer="97">WARNING: GPIO32/33 are used by RTC. Need to modify WROOM32 to use them as outputs</text>
+<text x="76.2" y="12.7" size="1.778" layer="97">OLED Header</text>
 <text x="142.24" y="91.44" size="1.778" layer="97">Programming Header</text>
 <text x="53.34" y="144.78" size="1.778" layer="97">(RESET)</text>
 </plain>
@@ -2680,9 +2676,9 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <instance part="GND1" gate="1" x="104.14" y="38.1"/>
 <instance part="P+2" gate="G$1" x="43.18" y="91.44"/>
 <instance part="LED10" gate="G$1" x="223.52" y="71.12"/>
-<instance part="JP2" gate="G$1" x="121.92" y="27.94" rot="R180"/>
-<instance part="GND2" gate="1" x="114.3" y="17.78"/>
-<instance part="P+3" gate="G$1" x="114.3" y="33.02"/>
+<instance part="JP2" gate="G$1" x="83.82" y="20.32" rot="MR90"/>
+<instance part="GND2" gate="1" x="96.52" y="20.32"/>
+<instance part="P+3" gate="G$1" x="88.9" y="30.48"/>
 <instance part="P+4" gate="1" x="10.16" y="160.02"/>
 <instance part="P+5" gate="1" x="170.18" y="78.74"/>
 <instance part="SW1" gate="G$1" x="101.6" y="152.4"/>
@@ -2711,7 +2707,6 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <attribute name="VALUE" x="127.508" y="56.388" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+9" gate="G$1" x="124.46" y="66.04"/>
-<instance part="GND10" gate="1" x="45.72" y="27.94"/>
 <instance part="IC1" gate="IC$1" x="73.66" y="73.66"/>
 <instance part="R3" gate="G$1" x="81.28" y="167.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="78.5114" y="165.608" size="1.778" layer="95" rot="R90"/>
@@ -2755,8 +2750,6 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <instance part="P+17" gate="G$1" x="210.82" y="134.62"/>
 <instance part="S3" gate="1" x="22.86" y="96.52"/>
 <instance part="S4" gate="1" x="134.62" y="55.88"/>
-<instance part="JP5" gate="G$1" x="33.02" y="35.56"/>
-<instance part="P+18" gate="G$1" x="40.64" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -2948,16 +2941,11 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <junction x="139.7" y="43.18"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
-</segment>
-<segment>
+<pinref part="JP2" gate="G$1" pin="3"/>
+<wire x1="86.36" y1="25.4" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="96.52" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="114.3" y1="20.32" x2="114.3" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="4"/>
-<wire x1="114.3" y1="22.86" x2="116.84" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="27.94" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3082,9 +3070,9 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <wire x1="170.18" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<label x="106.68" y="83.82" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="IO22"/>
+<wire x1="101.6" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<label x="106.68" y="68.58" size="1.778" layer="95"/>
+<pinref part="IC1" gate="IC$1" pin="IO18"/>
 </segment>
 </net>
 <net name="DATA8" class="0">
@@ -3116,9 +3104,9 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <wire x1="127" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
-<label x="106.68" y="76.2" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="IO21"/>
+<wire x1="101.6" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
+<label x="106.68" y="63.5" size="1.778" layer="95"/>
+<pinref part="IC1" gate="IC$1" pin="IO17"/>
 </segment>
 </net>
 <net name="DATA4" class="0">
@@ -3210,12 +3198,6 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <wire x1="124.46" y1="63.5" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+3" gate="G$1" pin="3.3V"/>
-<wire x1="114.3" y1="33.02" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="114.3" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="P+10" gate="G$1" pin="3.3V"/>
 </segment>
@@ -3248,42 +3230,9 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <pinref part="P+17" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="G$1" pin="4"/>
-<wire x1="38.1" y1="40.64" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="P+18" gate="G$1" pin="3.3V"/>
-<wire x1="40.64" y1="40.64" x2="40.64" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<wire x1="48.26" y1="81.28" x2="33.02" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="IC$1" pin="SENSOR_VP"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<wire x1="48.26" y1="78.74" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="IC$1" pin="SENSOR_VN"/>
-</segment>
-</net>
-<net name="I2C_D1" class="0">
-<segment>
-<label x="99.06" y="30.48" size="1.778" layer="95"/>
-<wire x1="81.28" y1="48.26" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
-<label x="81.28" y="33.02" size="1.778" layer="95" rot="R90"/>
-<pinref part="IC1" gate="IC$1" pin="SD1"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="30.48" x2="116.84" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="I2C_D0" class="0">
-<segment>
-<wire x1="78.74" y1="48.26" x2="78.74" y2="27.94" width="0.1524" layer="91"/>
-<label x="78.74" y="33.02" size="1.778" layer="95" rot="R90"/>
-<label x="99.06" y="27.94" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="SD0"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="27.94" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="G$1" pin="3.3V"/>
+<pinref part="JP2" gate="G$1" pin="4"/>
+<wire x1="88.9" y1="30.48" x2="88.9" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -3457,9 +3406,9 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <junction x="167.64" y="114.3"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
-<label x="106.68" y="63.5" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="IO17"/>
+<pinref part="IC1" gate="IC$1" pin="IO12"/>
+<wire x1="48.26" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="33.02" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BUTTON8" class="0">
@@ -3478,9 +3427,10 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <junction x="210.82" y="114.3"/>
 </segment>
 <segment>
-<wire x1="101.6" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
-<label x="106.68" y="68.58" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="IO18"/>
+<pinref part="IC1" gate="IC$1" pin="IO2"/>
+<wire x1="86.36" y1="48.26" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
+<label x="88.9" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD0" class="0">
@@ -3501,24 +3451,6 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <label x="127" y="83.82" size="1.778" layer="95"/>
 <pinref part="IC1" gate="IC$1" pin="RXD0"/>
-</segment>
-</net>
-<net name="RXD1" class="0">
-<segment>
-<wire x1="68.58" y1="48.26" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
-<label x="45.72" y="38.1" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="SD2"/>
-<pinref part="JP5" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="TXD1" class="0">
-<segment>
-<wire x1="71.12" y1="48.26" x2="71.12" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
-<label x="45.72" y="35.56" size="1.778" layer="95"/>
-<pinref part="IC1" gate="IC$1" pin="SD3"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="EN" class="0">
@@ -3556,6 +3488,32 @@ Switch DATA6/7 to SENSOR_VP/N so that 21/22 can be used for I2C</text>
 <pinref part="S4" gate="1" pin="P"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
 <junction x="129.54" y="43.18"/>
+</segment>
+</net>
+<net name="GPIO21_SDA" class="0">
+<segment>
+<wire x1="119.38" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="106.68" y="76.2" size="1.778" layer="95"/>
+<pinref part="IC1" gate="IC$1" pin="IO21"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="25.4" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<label x="66.04" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO22_SCL" class="0">
+<segment>
+<wire x1="101.6" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<label x="106.68" y="83.82" size="1.778" layer="95"/>
+<pinref part="IC1" gate="IC$1" pin="IO22"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="25.4" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<label x="66.04" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
