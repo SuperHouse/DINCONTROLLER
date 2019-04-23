@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -29,13 +29,13 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="15" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -847,27 +847,27 @@ design rules under a new name.</description>
 </element>
 <element name="R10" library="freetronics" package="0603@2" value="330R" x="67" y="36" smashed="yes" rot="R180">
 <attribute name="NAME" x="69.889" y="35.492" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="64.984" y="34.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="64.984" y="36.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R11" library="freetronics" package="0603@2" value="330R" x="78" y="38" smashed="yes" rot="R180">
 <attribute name="NAME" x="80.889" y="37.492" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="75.984" y="36.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="75.984" y="38.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R16" library="freetronics" package="0603@2" value="330R" x="47" y="10" smashed="yes" rot="R180">
 <attribute name="NAME" x="47.889" y="9.492" size="0.4064" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="43.984" y="10.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="45.984" y="10.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R17" library="freetronics" package="0603@2" value="330R" x="59" y="17" smashed="yes" rot="R180">
 <attribute name="NAME" x="59.889" y="16.492" size="0.4064" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="52.984" y="16.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="56.984" y="17.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R22" library="freetronics" package="0603@2" value="330R" x="54" y="19" smashed="yes" rot="R180">
 <attribute name="NAME" x="54.889" y="18.492" size="0.4064" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="47.984" y="18.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="51.984" y="19.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R23" library="freetronics" package="0603@2" value="330R" x="49" y="21" smashed="yes" rot="R180">
 <attribute name="NAME" x="49.889" y="20.492" size="0.4064" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="42.984" y="20.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="46.984" y="21.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="JP1" library="freetronics-jon" package="2X6-SHROUDED" value="M06X2" x="8" y="19" smashed="yes" rot="MR180">
 <attribute name="NAME" x="6.349" y="37.542" size="0.4064" layer="104" rot="MR180"/>
@@ -875,16 +875,16 @@ design rules under a new name.</description>
 </element>
 <element name="R5" library="freetronics-jon" package="0603" value="2K2" x="9" y="39" smashed="yes">
 <attribute name="NAME" x="8.111" y="39.508" size="0.4064" layer="25" font="vector"/>
-<attribute name="VALUE" x="7.484" y="37.0348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="7.484" y="40.0348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="REG2" library="freetronics" package="SOT223" value="LD1117-SOT223" x="8" y="9" rot="R270"/>
 <element name="REG1" library="freetronics" package="SOT89" value="LD1117-SOT89" x="8" y="9" smashed="yes" rot="R270">
 <attribute name="NAME" x="11.175" y="11.54" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="3.6551" y="11.4051" size="1.016" layer="27" rot="R270"/>
+<attribute name="VALUE" x="2.5949" y="13.6551" size="1.016" layer="27"/>
 </element>
 <element name="C3" library="freetronics" package="EIA3216" value="10uF 6.3V A TANT" x="17.37" y="29.75" smashed="yes">
 <attribute name="NAME" x="14.83" y="31.131" size="0.4064" layer="25"/>
-<attribute name="VALUE" x="12.278" y="27.582" size="1.016" layer="27"/>
+<attribute name="VALUE" x="12.278" y="30.582" size="1.016" layer="27"/>
 </element>
 <element name="C4" library="freetronics" package="0603" value="1uF 0603" x="7" y="35" smashed="yes">
 <attribute name="NAME" x="6.111" y="35.762" size="0.4064" layer="25" font="vector"/>
@@ -892,7 +892,7 @@ design rules under a new name.</description>
 </element>
 <element name="LED10" library="freetronics-jon" package="LED3MM" value="BLUE" x="12" y="36" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.095" y="35.619" size="1.27" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="9.905" y="38.349" size="1.27" layer="27" ratio="10"/>
+<attribute name="VALUE" x="11.905" y="37.349" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP2" library="freetronics-jon" package="1X04" value="" x="27" y="9"/>
 <element name="SW1" library="freetronics-jon" package="TACTILE-PTH-SP0620" value="TAC-SWITCH-LEDSP0620" x="54" y="28"/>
@@ -921,7 +921,7 @@ design rules under a new name.</description>
 </element>
 <element name="R7" library="freetronics" package="0603@2" value="22K" x="61" y="25" smashed="yes" rot="R270">
 <attribute name="NAME" x="61.508" y="25.889" size="0.4064" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="59.984" y="22.5348" size="1.016" layer="27" font="vector"/>
+<attribute name="VALUE" x="57.984" y="24.5348" size="1.016" layer="27" font="vector"/>
 </element>
 <element name="R8" library="freetronics" package="0603@2" value="22K" x="74" y="25" smashed="yes" rot="R270">
 <attribute name="NAME" x="74.508" y="25.889" size="0.4064" layer="25" font="vector" rot="R270"/>
@@ -1704,111 +1704,6 @@ design rules under a new name.</description>
 <approved hash="19,1,660a5e1c10f6d559"/>
 <approved hash="19,1,98c964ba9cb160c2"/>
 <approved hash="19,1,5db2b238440e574b"/>
-<approved hash="19,1,86b684ce9a309848"/>
-<approved hash="19,1,87b6840e9af09948"/>
-<approved hash="19,1,81be80469eb89f40"/>
-<approved hash="19,1,0bf70e2df033f5e9"/>
-<approved hash="19,1,0a330fd1f1cff42d"/>
-<approved hash="19,1,085f06a5f8bbf641"/>
-<approved hash="19,1,0ff30c91f28ff1ed"/>
-<approved hash="19,1,083717ade9b3f629"/>
-<approved hash="19,1,878685ee9b109978"/>
-<approved hash="19,1,80e6830e9df09e18"/>
-<approved hash="19,1,e54de4cca0c8a149"/>
-<approved hash="19,1,877e99b687489980"/>
-<approved hash="19,1,428d4014f6eaf473"/>
-<approved hash="19,1,0bd7078df993f5c9"/>
-<approved hash="19,1,0bd31521eb3ff5cd"/>
-<approved hash="19,1,0bcf0b55f54bf5d1"/>
-<approved hash="19,1,08b30901f71ff6ad"/>
-<approved hash="19,1,5a8d58148eea8c73"/>
-<approved hash="19,1,c28ec01466ea6470"/>
-<approved hash="19,1,ca8ec813aeedac70"/>
-<approved hash="19,1,d8b2deccc0d2c6ac"/>
-<approved hash="19,1,0cac0ad42cca2ab2"/>
-<approved hash="19,1,d0a6d6dce8c2eeb8"/>
-<approved hash="19,1,bcadbad1eccfeab3"/>
-<approved hash="19,1,08930ed1f0cff68d"/>
-<approved hash="19,1,068f04142aea2871"/>
-<approved hash="19,1,4289401366ed6477"/>
-<approved hash="19,1,c28fc015f6ebf471"/>
-<approved hash="19,1,daf1d86b0e950c0f"/>
-<approved hash="19,1,7a8f7816aee8ac71"/>
-<approved hash="19,1,5ca25ad1cccfcabc"/>
-<approved hash="19,1,755075b071b47154"/>
-<approved hash="19,1,88ae8ed0f0cef6b0"/>
-<approved hash="19,1,3ca93ad1eccfeab7"/>
-<approved hash="19,1,d0acd6d1e8cfeeb2"/>
-<approved hash="19,1,8ca58ad1accfaabb"/>
-<approved hash="19,1,4f664ec7c839c998"/>
-<approved hash="19,1,4fba4dd3cb2dc944"/>
-<approved hash="19,1,48da4b33cdcdce24"/>
-<approved hash="19,1,4f42518bd775c9bc"/>
-<approved hash="19,1,4f424c1bcae5c9bc"/>
-<approved hash="19,1,8cae8ad5cccbcab0"/>
-<approved hash="19,1,b551b4ce90ca9155"/>
-<approved hash="19,1,8fea8389c597c9f4"/>
-<approved hash="19,1,8fee9125d73bc9f0"/>
-<approved hash="19,1,8ff28f51c94fc9ec"/>
-<approved hash="19,1,8c8e8d05cb1bca90"/>
-<approved hash="19,1,d8f6d8f78bf38bf2"/>
-<approved hash="19,1,b7c3b60eeba311b5"/>
-<approved hash="19,1,4eb04ed1f2d5f2b4"/>
-<approved hash="19,1,5b3d5e5488aa8dc3"/>
-<approved hash="19,1,255124d040d44155"/>
-<approved hash="19,1,433d4654f0aaf5c3"/>
-<approved hash="19,1,c33ec65460aa65c0"/>
-<approved hash="19,1,cb3ece53a8adadc0"/>
-<approved hash="19,1,4b314e5828a62dcf"/>
-<approved hash="19,1,4339465360ad65c7"/>
-<approved hash="19,1,d3ccd841e65fedd2"/>
-<approved hash="19,1,8fc58441a25fa9db"/>
-<approved hash="19,1,dbd2d05cce42c5cc"/>
-<approved hash="19,1,0fcc0444225a29d2"/>
-<approved hash="19,1,d3c6d84ce652edd8"/>
-<approved hash="19,1,b0b5b6d208cc0eab"/>
-<approved hash="19,1,bfcdb441e25fe9d3"/>
-<approved hash="19,1,0bf30041fe5ff5ed"/>
-<approved hash="19,1,9412d21bd5bef8fd"/>
-<approved hash="19,1,99769ba62fa22d72"/>
-<approved hash="19,1,24cb261cf318f1cf"/>
-<approved hash="19,1,c4ef511226d0439e"/>
-<approved hash="19,1,358f60b7ed1b4490"/>
-<approved hash="19,1,857a87c2993c9b84"/>
-<approved hash="19,1,85be84069af89b40"/>
-<approved hash="19,16,8ca58ad1accfaabb"/>
-<approved hash="19,16,8cae8ad5cccbcab0"/>
-<approved hash="19,16,8fea8389c597c9f4"/>
-<approved hash="19,16,8fee9125d73bc9f0"/>
-<approved hash="19,16,8ff28f51c94fc9ec"/>
-<approved hash="19,16,8c8e8d05cb1bca90"/>
-<approved hash="19,16,d3ccd841e65fedd2"/>
-<approved hash="19,16,8fc58441a25fa9db"/>
-<approved hash="19,16,dbd2d05cce42c5cc"/>
-<approved hash="19,16,0fcc0444225a29d2"/>
-<approved hash="19,16,d3c6d84ce652edd8"/>
-<approved hash="19,16,bfcdb441e25fe9d3"/>
-<approved hash="19,16,0bf30041fe5ff5ed"/>
-<approved hash="19,16,c4e9739302018365"/>
-<approved hash="19,16,b0b5b6d208cc0eab"/>
-<approved hash="19,16,0bf70e2df033f5e9"/>
-<approved hash="19,16,0a330fd1f1cff42d"/>
-<approved hash="19,16,085f06a5f8bbf641"/>
-<approved hash="19,16,0ff30c91f28ff1ed"/>
-<approved hash="19,16,083717ade9b3f629"/>
-<approved hash="19,16,0bd7078df993f5c9"/>
-<approved hash="19,16,0bd31521eb3ff5cd"/>
-<approved hash="19,16,0bcf0b55f54bf5d1"/>
-<approved hash="19,16,08b30901f71ff6ad"/>
-<approved hash="19,16,d8b2deccc0d2c6ac"/>
-<approved hash="19,16,0cac0ad42cca2ab2"/>
-<approved hash="19,16,d0a6d6dce8c2eeb8"/>
-<approved hash="19,16,bcadbad1eccfeab3"/>
-<approved hash="19,16,08930ed1f0cff68d"/>
-<approved hash="19,16,5ca25ad1cccfcabc"/>
-<approved hash="19,16,88ae8ed0f0cef6b0"/>
-<approved hash="19,16,3ca93ad1eccfeab7"/>
-<approved hash="19,16,d0acd6d1e8cfeeb2"/>
 </errors>
 </board>
 </drawing>
